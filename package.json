@@ -1,7 +1,7 @@
 {
-  "name": "typescript-action",
+  "name": "milestone-check-action",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "description": "TypeScript template action",
   "main": "lib/main.js",
   "scripts": {
@@ -15,17 +15,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git@github.com:siimon/milestone-check-action.git"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "YourNameOrOrganization",
+  "author": "Simon Nyberg",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.0"
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^2.1.1"
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",
