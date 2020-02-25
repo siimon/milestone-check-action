@@ -3516,7 +3516,6 @@ function run() {
             const pullRequest = github.context.payload
                 .pull_request;
             if (!pullRequest) {
-                core.setFailed('Missing pull request data');
                 return;
             }
             if (!pullRequest.milestone) {
