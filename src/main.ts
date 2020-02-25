@@ -23,7 +23,6 @@ async function run(): Promise<void> {
     const pullRequest = (github.context.payload as PullRequestWebhookPayload)
       .pull_request
     if (!pullRequest) {
-      core.setFailed('Missing pull request data')
       return
     }
 
